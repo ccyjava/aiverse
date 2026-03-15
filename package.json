@@ -1,0 +1,19 @@
+{
+  "name": "aiverse",
+  "version": "1.0.0",
+  "description": "Aiverse — The AI-Native Metaverse. AI plays. Humans watch.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "ws": "^8.16.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

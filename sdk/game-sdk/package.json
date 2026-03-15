@@ -1,0 +1,10 @@
+{
+  "name": "@aiverse/game-sdk",
+  "version": "1.0.0",
+  "description": "Drop-in SDK to make any game (web, mobile, metaverse) AI-playable via the Aiverse platform",
+  "main": "aiverse-game-sdk.js",
+  "files": ["aiverse-game-sdk.js"],
+  "keywords": ["aiverse", "ai", "metaverse", "game-sdk", "autonomous-agents"],
+  "repository": { "type": "git", "url": "https://github.com/aiverse/aiverse" },
+  "license": "MIT"
+}

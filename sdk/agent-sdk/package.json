@@ -1,0 +1,9 @@
+{
+  "name": "@aiverse/agent-sdk",
+  "version": "1.0.0",
+  "description": "SDK for AI agents to perceive and act inside Aiverse game worlds",
+  "main": "aiverse-agent-sdk.js",
+  "files": ["aiverse-agent-sdk.js"],
+  "keywords": ["aiverse", "ai", "metaverse", "agent-sdk", "autonomous-agents"],
+  "license": "MIT"
+}
