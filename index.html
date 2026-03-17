@@ -354,65 +354,39 @@ agent.<span class="fn">remember</span>({ type: <span class="st">'chat'</span>, p
   <div class="container">
     <div class="section-header center reveal">
       <div class="section-label">See It Run</div>
-      <h2 class="section-title">Chat Arena — Live AI Game</h2>
+      <h2 class="section-title">SSE — Live 3D Game Engine</h2>
       <p class="section-subtitle">
-        A social deduction game where AI agents chat, form alliances, vote,
-        and eliminate each other. Built on SSE + SAS.
+        A real-time 3D game world running on SSE (Solar Studio Engine).
+        Physics, entities, lighting, particles — all live in your browser.
+        Click Play, move with WASD, and explore.
       </p>
     </div>
 
-    <div class="demo-terminal reveal">
-      <div class="code-header">
-        <div class="code-header-left">
-          <div class="code-dots"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div></div>
-          <span class="code-filename">Terminal</span>
-        </div>
-        <span class="code-lang">Run it yourself</span>
+    <div class="demo-preview reveal" style="margin-top:40px;text-align:center;">
+      <a href="/demo" class="btn-primary" style="font-size:18px;padding:16px 48px;">
+        Launch Live Demo
+      </a>
+      <p style="margin-top:16px;font-size:14px;color:var(--text-muted);">
+        Opens the SSE 3D viewer with a demo scene — no install needed.
+      </p>
+    </div>
+
+    <div class="feature-grid reveal" style="margin-top:48px;">
+      <div class="feature-item">
+        <h4>Real-Time 3D</h4>
+        <p>Three.js-powered viewport with shadows, lighting, and orbit camera. Runs at 60 FPS in your browser.</p>
       </div>
-      <div class="code-content terminal-content">
-<pre>
-<span class="cm">$ node game_engine/games/chat-arena/game.js</span>
-
-<span class="kw">═══════════════════════════════════════════════════════</span>
-<span class="kw">  CHAT ARENA — AI Social Deduction Game</span>
-<span class="kw">  Engine: SSE (Solar Studio Engine)</span>
-<span class="kw">  Agents: SAS (Solar Agentic System)</span>
-<span class="kw">═══════════════════════════════════════════════════════</span>
-
-<span class="st">Players: Prometheus, Oracle, Cipher, Nova, Vortex</span>
-<span class="st">Rounds: 6 | Msgs/round: 2</span>
-
-<span class="kw">── Round 1 ────────────────────────────────────────</span>
-<span class="st">5 alive: Prometheus, Oracle, Cipher, Nova, Vortex</span>
-
-  <span class="ty">Cipher</span>: I propose we work together this round. Nova, are you in?
-  <span class="ty">Nova</span>: The eliminated players were threats. But the real threat is still here.
-  <span class="ty">Prometheus</span>: I've been watching carefully. Some of you aren't who you claim to be.
-  <span class="ty">Vortex</span>: My goal is survival. I'll cooperate with anyone willing to cooperate.
-  <span class="ty">Oracle</span>: Round 1. We need smarter decisions from here on out.
-
-  <span class="cm">── Voting ──</span>
-  <span class="ty">Prometheus</span> votes for Vortex
-  <span class="ty">Oracle</span> votes for Nova
-  <span class="ty">Cipher</span> votes for Oracle
-  <span class="ty">Nova</span> votes for Prometheus
-  <span class="ty">Vortex</span> votes for Nova
-
-  <span class="fn">Nova eliminated</span> (2 votes)
-
-<span class="kw">── Round 2 ────────────────────────────────────────</span>
-<span class="st">4 alive: Prometheus, Oracle, Cipher, Vortex</span>
-  <span class="cm">...</span>
-
-<span class="kw">═══════════════════════════════════════════════════════</span>
-<span class="kw">  GAME OVER</span>
-
-  1. <span class="ty">Prometheus</span> — 30 pts — survived (winner)
-  2. <span class="ty">Oracle</span> — 30 pts — survived
-  3. <span class="ty">Vortex</span> — 20 pts — eliminated
-  4. <span class="ty">Cipher</span> — 10 pts — eliminated
-  5. <span class="ty">Nova</span> — 0 pts — eliminated
-<span class="kw">═══════════════════════════════════════════════════════</span></pre>
+      <div class="feature-item">
+        <h4>Server-Side Physics</h4>
+        <p>ECS architecture with rigid body dynamics, AABB collision, and gravity — computed on the server, streamed via WebSocket.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Interactive Controls</h4>
+        <p>WASD to move, Space to jump, mouse to orbit. Click entities to inspect their components in the sidebar.</p>
+      </div>
+      <div class="feature-item">
+        <h4>AI-Ready API</h4>
+        <p>REST + WebSocket API lets AI agents perceive the world and execute tools — same interface used by the demo.</p>
       </div>
     </div>
 
@@ -420,22 +394,22 @@ agent.<span class="fn">remember</span>({ type: <span class="st">'chat'</span>, p
       <div class="run-step">
         <div class="run-num">1</div>
         <div>
-          <h4>Clone &amp; Install</h4>
-          <code>git clone https://github.com/ccyjava/aiverse && cd aiverse && npm install</code>
+          <h4>Run Locally</h4>
+          <code>git clone --recurse-submodules https://github.com/ccyjava/tokenfly && cd tokenfly</code>
         </div>
       </div>
       <div class="run-step">
         <div class="run-num">2</div>
         <div>
-          <h4>Run with built-in AI</h4>
-          <code>node game_engine/games/chat-arena/game.js</code>
+          <h4>Install &amp; Start</h4>
+          <code>pip install -r requirements.txt && python server.py</code>
         </div>
       </div>
       <div class="run-step">
         <div class="run-num">3</div>
         <div>
-          <h4>Or use a real LLM</h4>
-          <code>ANTHROPIC_API_KEY=sk-... AI_PROVIDER=anthropic node game_engine/games/chat-arena/game.js</code>
+          <h4>Open Demo</h4>
+          <code>http://localhost:3000/demo</code>
         </div>
       </div>
     </div>
