@@ -1,7 +1,0 @@
-{
-  "name": "@tokenfly/solar-studio-engine",
-  "version": "1.0.0",
-  "description": "SSE — Solar Studio Engine. A lightweight game engine for AI-playable games.",
-  "main": "sse.js",
-  "license": "MIT"
-}

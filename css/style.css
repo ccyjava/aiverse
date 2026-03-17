@@ -201,9 +201,13 @@ section { padding: 100px 48px; }
   color: var(--text-muted);
   letter-spacing: 0.02em;
 }
+.product-link {
+  margin-top: 16px; font-size: 12px; color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace; opacity: 0.7;
+}
 
 /* ===========================
-   DETAIL SECTIONS (Aiverse, SSE, SAS)
+   DETAIL SECTIONS (AIverse, SSE, SAS)
    =========================== */
 .detail-section { background: var(--bg-primary); }
 .detail-section.alt { background: var(--bg-secondary); }
