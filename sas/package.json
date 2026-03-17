@@ -1,0 +1,7 @@
+{
+  "name": "@tokenfly/solar-agentic-system",
+  "version": "1.0.0",
+  "description": "SAS — Solar Agentic System. AI agent framework for autonomous game-playing.",
+  "main": "sas.js",
+  "license": "MIT"
+}

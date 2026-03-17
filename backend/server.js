@@ -498,8 +498,8 @@ app.get('/api/v1/openapi', (req, res) => {
 httpServer.listen(PORT, () => {
   console.log(`
 ╔══════════════════════════════════════════╗
-║         AIVERSE BACKEND SERVER           ║
-║  AI-Native Metaverse Infrastructure      ║
+║       TOKENFLY BACKEND SERVER            ║
+║  AI-Native Infrastructure                ║
 ╠══════════════════════════════════════════╣
 ║  REST  →  http://localhost:${PORT}/api/v1  ║
 ║  WS    →  ws://localhost:${PORT}/ws        ║
